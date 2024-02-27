@@ -1,0 +1,415 @@
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/gamebackround.jpg");
+    background-size: contain;
+}
+.Game {
+    font-size: 150%;
+}
+
+/* RoomMaker */
+.RoomMaker,
+.End {
+    background-image: url("img/room.jpg");
+    height: 100vh;
+    background-size: contain;
+}
+
+.RoomMaker input {
+    color: #c0bfbf;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.43);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RoomMaker input:focus {
+    color: #301c2e;
+    background-color: rgba(212, 210, 210, 0.43);
+}
+
+.RoomMaker .logoimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RoomMaker .ButtonDiv,
+.End {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RoomMaker .roomButton,
+.WaitingRoom .newGameButton {
+    margin-right: 40px;
+    align-items: center;
+    background-image: linear-gradient(144deg, #c371fe, #5B42F3 50%, #92077f);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.RoomMaker .roomButton:active,
+.RoomMaker .roomButton:hover,
+.WaitingRoom .newGameButton:active,
+.WaitingRoom .newGameButton:hover {
+    outline: 0;
+}
+
+.RoomMaker .roomButton span,
+.WaitingRoom .newGameButton span,
+.End .endcard {
+    background-color: rgba(5, 6, 45, 0.629);
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 300ms;
+}
+
+.End .endcard {
+    color: #f1bcec;
+}
+
+.End .endcard table .tablename {
+    text-align: centre;
+    color: #84c6e7;
+}
+
+.End .endcard table .tablepoints {
+    text-align: end;
+    color: #3bace5;
+}
+
+.End .endcard span {
+    color: #dbe6ec;
+    font-weight: bolder;
+}
+
+.RoomMaker .roomButton:hover span,
+.WaitingRoom .newGameButton:hover span {
+    background: none;
+}
+
+/* RoomMaker end*/
+
+/* WaitingRoom */
+.WaitingRoom {
+    font-size: 200%;
+    background-image: url("img/room.jpg");
+    height: 100vh;
+    background-size: contain;
+}
+
+.WaitingRoom input {
+    color: #c0bfbf;
+    border-radius: 10px;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.43);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+}
+
+.WaitingRoom input:focus {
+    color: #f1bcec;
+    background-color: rgba(60, 35, 52, 0.43);
+}
+
+.WaitingRoom .playerlist {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    color: #ffaaaa;
+    font-weight: bold;
+}
+
+.Markets .row-1{
+    border-radius: 10px;
+    background-color: #e8f2f8a7;
+}
+
+.saveNameButton {
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079, #510d47);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 15px;
+}
+
+.saveNameButton:active {
+    outline: 0;
+}
+
+.saveNameButton:hover {
+    outline: 0;
+}
+
+.saveNameButton span {
+    transition: all 200ms;
+}
+
+.saveNameButton:hover span {
+    transform: scale(.9);
+    opacity: .75;
+}
+
+.copyButton {
+    margin: 15px;
+    background-image: linear-gradient(135deg, #0d23a097, #ff007797);
+
+}
+
+.roomcode {
+    color: #fff;
+    font-weight: bold;
+
+}
+.playerName{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.playerPoints{
+    color: rgb(251, 199, 243);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.playerdata{
+    display: flex;
+    flex-direction: row;
+}
+
+.WaitingRoomCards {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.textmiddlecard {
+    height: 300px;
+    margin: 14px;
+    color: #f1bcec;
+    background-color: rgba(60, 35, 52, 0.558);
+    border-radius: 10px;
+}
+
+.textmiddlecard .content {
+    margin: 15px;
+}
+
+.flex {
+    margin-top: 10px;
+    display: flex;
+}
+
+.wrong {
+    display: flex;
+}
+
+/* .playersWaiting{
+    display: flex;
+    flex-direction: column; 
+} */
+
+/* WaitingRoom end*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.row-3 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.gameTable {
+    display: flex;
+    flex: 1;
+    border: 1px;
+    flex-direction: column;
+    
+}
+
+.gameTable-row-1,
+.gameTable-row-2,
+.gameTable-row-3 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+
+}
+
+.tile img {
+    border-style: solid;
+    border-width: 3.5px;
+    border-color: #d64488d4;
+}
+
+.nottile img {
+    border-style: solid;
+    border-width: 3.5px;
+    border-color: #e1cf8558;
+}
+.empty img {
+    border-style: solid;
+    border-width: 3.5px;
+    border-color: #8a3b3b01;
+}
+
+.snapspan {
+    background-color: rgba(136, 135, 200, 0.544);
+    margin: 0px;
+}
+
+.grid2x2 {
+    flex: 1;
+    /* min-height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2>div {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid2x2>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.markets {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/market.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border-style: solid;
+      border-color: #301c2e; */
+    /* background-color: rgba(52, 15, 108, 0.6); */
+    border-radius: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketsLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.marketsTile {
+    margin: 0px;
+    display: flex;
+
+}
+
+.lastmarket {
+    background-color: rgba(146, 78, 114, 0.396);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+td {
+    padding: 0px;
+    margin-top: 0px;
+    /* border-style: solid;
+      border-color: #301c2e; */
+}
+
+
+.theTables {
+    display: flex;
+    background-color: #301c2e7b;
+}
+
+.player0 {
+    background-color: #273e4aad;
+}
+
+.player3 {
+    background-color: #323761ad;
+}
+
+.player2 {
+    background-color: #4c2432ad;
+}
+
+.player1 {
+    background-color: #5c2a57ad;
+}
+
+.Markets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activethings{
+    box-shadow:0 0 17px rgb(1, 199, 130);
+}
+.playerHand img{
+    height:40px;
+    width: 40px;
+    margin: 2px;
+}
